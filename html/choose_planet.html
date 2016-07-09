@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="../js/public_func.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,16 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/bg.css">
     <link rel="stylesheet" href="../css/title.css">
-    <title>选择星球</title>
+    <title>选择前往的星球</title>
+    <style>
+        .div_planet{
+            margin-top: 60px;
+            text-align: center;
+        }
+        .bn_planet{
+            width: 75%;
+        }
+    </style>
 </head>
 <body>
 <!-------head------->
@@ -21,5 +31,18 @@
         <img id="bn_card_library" class="bn_card" onclick="func_card_library()">
     </div>
 </div>
+<!-------body------->
+<div class="div_planet">
+    <img id="bn_choose_planet" class="bn_planet" src="../images/planet_idle.png" onclick="func_bn_choose_planet()">
+</div>
+<!-------foot------->
+<!-------script------->
+<script>
+    //选择星球按钮事件
+    function func_bn_choose_planet() {
+        document.getElementById('bn_choose_planet').setAttribute("src","../images/planet_pressed.png");
+        //alert("选择星球");
+    }
+</script>
 </body>
 </html>
