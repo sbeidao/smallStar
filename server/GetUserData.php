@@ -1,18 +1,25 @@
 <?php
-	//require_once "database.php";
+	require_once "config.php";
     header('Content-Type: ; ');//使用gb2312编码，使中文不会变成乱码      
     $openid = $_GET['trans_data'];    
     
 	
-   
+   /* require_once "database.php";
+	$database = new DATABASE();
+
+	$connect_to_db = $database->connect_to_database();
+	//执行sql语句
+	$sql = "SELECT * FROM  user WHERE wx_id = " . json_encode($openid) ;
+	//print_r($sql);
+
+	$result = $database->execute_sql($sql);
+
+	 while ($row = $result->fetch_row()) {
+	 	print_r($row);
+	 }*/
 	
 	//connect to database
-   $SAE_MYSQL_USER = "1wk5ynnmyn";
-   $SAE_MYSQL_PASS = "klm1wjm33303xxzy5123hym5hx2ly0hx0z3yjyzk";
-   $SAE_MYSQL_HOST_M = "w.rdc.sae.sina.com.cn";
-   $SAE_MYSQL_HOST_S = "r.rdc.sae.sina.com.cn";
-   $SAE_MYSQL_PORT = "3307";
-   $SAE_MYSQL_DB = "app_smallstar";
+  
    //连接数据库
     $db = new mysqli($SAE_MYSQL_HOST_M, $SAE_MYSQL_USER, $SAE_MYSQL_PASS, $SAE_MYSQL_DB, $SAE_MYSQL_PORT);
     //print_r($db);
