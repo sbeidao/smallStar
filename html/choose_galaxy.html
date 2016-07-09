@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="../js/public_func.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,11 +35,8 @@
 <div class="div_galaxy_card">
     <img id="bn_galaxy_card" class="bn_galaxy_card" src="../gif/galaxy_card.gif" onclick="func_select_galaxy()">
 </div>
+<!-------script------->
 <script>
-    //跳转至卡片库
-    function func_card_library(){
-    }
-
     //选择星系按钮
     function func_select_galaxy(){
         document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
