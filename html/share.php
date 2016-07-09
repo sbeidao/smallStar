@@ -71,8 +71,8 @@ $signPackage = $jssdk->GetSignPackage();
 </div>
 <!--
 <div class="div_share">
-    <img id="bn_moment" class="moment" src="../images/circle_idle.png" onclick="func_share_to_moment()">
-    <img id="bn_friend" class="friend" src="../images/friend_idle.png" onclick="func_share_to_friend()">
+    <img id="bn_moment" class="moment" src="../images/circle_idle.png">
+    <img id="bn_friend" class="friend" src="../images/friend_idle.png">
 </div>
 -->
 <div class="div_back">
@@ -163,19 +163,6 @@ wx.onMenuShareAppMessage({
 wx.error(function (res) {
   alert(res.errMsg);
 });
-
-//分享至朋友圈
-function func_share_to_moment(){
-    document.getElementById('bn_moment').setAttribute("src","../images/circle_pressed.png");
-    //alert("分享至朋友圈");
-    
-}
-
-//分享至朋友
-function func_share_to_friend(){
-    document.getElementById('bn_friend').setAttribute("src","../images/friend_pressed.png");
-    //alert("分享至朋友");
-}
 
 
 
