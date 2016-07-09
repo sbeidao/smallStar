@@ -8,6 +8,37 @@
     <script src="../js/public_func.js"></script>
     <title>宝宝的朗诵录音</title>
     <style>
+        .div_record{
+            position: absolute;
+            top: 260px;
+            width: 100%;
+            height: 80px;
+        }
+        .div_audio_wave{
+            position:relative;
+            margin:20px auto 0px auto;
+            text-align:center;
+            width:300px;
+        }
+        .audio_bg{
+            position:absolute;
+            z-index:1;
+            width:84%;
+            left:24px;
+        }
+        .audio_wave{
+            position:absolute;
+            z-index:2;
+            left:30px;
+            top:2px;
+            width:80%;
+        }
+        .play_pause{
+            position:absolute;
+            width:20px;
+            left:140px;
+            top:40px;
+        }
         .div_back{
             position: absolute;
             height: 100px;
@@ -24,11 +55,44 @@
     </style>
 </head>
 <body>
-<!-------head------->
 <!-------body------->
+<div class="div_record">
+    <div class="div_audio_wave">
+        <img class="audio_bg" src="../images/record_blank.png">
+        <img id="wave" class="audio_wave" src="../images/record_wave.png">
+        <img id="bn_paly_pause" class="play_pause" src="../images/play_idle.png" onclick="func_play_pause()">
+    </div>
+</div>
 <!-------foot------->
 <div class="div_back">
     <img id="bn_close" class="back" src="../images/close_idle.png" onclick="func_close()">
 </div>
+<!-------script------->
+<script>
+    //播放暂停录音
+    function func_play_pause(){
+        if(document.getElementById('bn_paly_pause').getAttribute("src") == "../images/play_idle.png"){
+            document.getElementById('bn_paly_pause').setAttribute("src","../images/pause_idle.png");
+            document.getElementById('wave').setAttribute("src","../gif/wave.gif");
+            //播放录音
+            //alert("播放录音");
+        }else{
+            if(document.getElementById('bn_paly_pause').getAttribute("src") == "../images/pause_idle.png"){
+                document.getElementById('bn_paly_pause').setAttribute("src","../images/play_idle.png");
+                document.getElementById('wave').setAttribute("src","../images/record_wave.png");
+                //暂停录音
+                //alert("暂停录音");
+            }
+        }
+    }
+
+    //关闭
+    function func_close(){
+        document.getElementById('bn_close').setAttribute("src","../images/close_pressed.png");
+        //alert("关闭");
+        window.close();
+        history.back(-1);
+    }
+</script>
 </body>
 </html>
