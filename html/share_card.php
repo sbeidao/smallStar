@@ -22,7 +22,7 @@ require_once "../server/config.php";
             border: none;
         }
         .div_card{
-            margin-top: 130px;
+            margin-top: 80px;
             width: 100%;
             text-align: center;
             background-color:#hhhhhh;
@@ -31,10 +31,11 @@ require_once "../server/config.php";
             width:60%;
         }
         .p1{
-            margin-top:30px;
+            margin-top:20px;
+            margin-bottom:50px;
         }
         .QRcode{
-            margin-top:30px;
+            margin-top:100px;
             width:100px;
             height:100px;
         }
@@ -67,8 +68,8 @@ $.ready = function(){
     //hint http://ourjs.com/detail/55e412ebe3312b046d27f51c
     var qrcode = new QRCode(document.getElementById("QRcode"), {
         text: qr_url,
-        width: 200,
-        height: 200,
+        width: 120,
+        height: 120,
         colorDark : "#692362",
         colorLight : "#ffffff",
         /*colorDark : "#ffffff",
@@ -100,7 +101,6 @@ function func_lighten(){
         return ;
     }
     document.getElementById('card').setAttribute("src","../images/puzzle_a.png");
-    document.getElementById('bn_lighten').setAttribute("src","../images/lighten_pressed.png");
     
     var wxSoundId = getUrlParam("wxSoundId");
 
