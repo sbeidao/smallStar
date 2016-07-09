@@ -31,6 +31,11 @@
             background:url(../images/fill_in_blank.png) center left no-repeat;
             border: none;
         }
+        .div_gender_icon{
+            height: 50px;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +44,10 @@
 </div>
 <div class="div_nickname">
     <input id="nickname" type="text" class="nickname" value="填写宝宝昵称" onclick="func_enable_submit()">
+</div>
+<div class="div_gender_icon">
+    <img id="boy" onclick="func_choose_boy()" src="../images/super_selected.png" style="margin-right: 30px">
+    <img id="girl" onclick="func_choose_girl()" src="../images/princess_failed.png">
 </div>
 </body>
 </html>
