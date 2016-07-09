@@ -8,8 +8,49 @@
     <link rel="stylesheet" href="../css/title.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>古诗</title>
+    <style>
+        .div_poem{
+            text-align:center;
+        }
+        .poem{
+            margin-top:20px;
+            width:70%;
+        }
+    </style>
 </head>
 <body>
-
+<!-------head------->
+<div class="div_title">
+    <div class="div_title_left">
+        <img id="user_sex" src="../images/blank_boy.png" width="190px">
+    </div>
+    <div class="div_nickname">
+        <p class="nickname"></p>
+    </div>
+    <div class="div_title_right">
+        <img id="bn_card_library" class="bn_card" onclick="func_card_library()">
+    </div>
+</div>
+<!-------body------->
+<div class="div_poem">
+    <img class="poem" >
+</div>
+<!-------foot------->
+<div class="div_record">
+    <div class="div_audio_wave">
+        <img class="audio_bg" src="../images/record_blank.png">
+        <img id="wave" class="audio_wave" src="../gif/wave.gif">
+        <img id="bn_paly_pause" class="play_pause" src="../images/play_idle.png" onclick="func_play_pause()">
+        <img id="bn_delete" class="delete" src="../images/delete_idle.png" onclick="func_delete()">
+    </div>
+</div>
+<div class="div_back">
+    <img id="bn_record_stop" class="record_stop" src="../images/record_idle.png">
+    <div class="div_share">
+        <img class="share" src="../images/share_failed.png" onclick="save_share()">
+    </div>
+    <img id="bn_back" class="back" src="../images/back_idle.png" onclick="func_back()">
+</div>
+<!-------script------->
 </body>
 </html>

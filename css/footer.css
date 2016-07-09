@@ -13,3 +13,64 @@
     right: 50px;
     z-index: 2;
 }
+
+
+.div_record{
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+    height: 80px;
+}
+.div_audio_wave{
+    position:relative;
+    margin:20px auto 0px auto;
+    text-align:center;
+    width:300px;
+}
+.audio_bg{
+    position:absolute;
+    z-index:1;
+    width:84%;
+    left:24px;
+}
+.audio_wave{
+    position:absolute;
+    z-index:2;
+    left:30px;
+    top:2px;
+    width:80%;
+}
+.play_pause{
+    position:absolute;
+    left:80px;
+    top:40px;
+}
+.delete{
+    position:absolute;
+    right:80px;
+    top:40px;
+}
+
+.record_stop{
+    position: absolute;
+    width: 60px;
+    height: 81px;
+    left:50px;
+    z-index: 2;
+}
+
+.div_share{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-align: center;
+}
+
+.share{
+    width: 104px;
+    height: 81px;
+    z-index: 2;
+}
