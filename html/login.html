@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/bg.css">
-    <title>登录</title>
+    <title>设置宝宝信息</title>
     <style>
         .div_head_portrait{
             margin-top: 110px;
@@ -90,12 +90,40 @@
     }
 
     //提交
-    function func_submit() {
-        if(document.getElementById('bn_submit').getAttribute("src") == "../gif/submit_pressed.gif") {
-            //提交操作
-            alert("登录");
+function func_submit(){
+    if(document.getElementById('bn_submit').getAttribute("src") == "../gif/submit_pressed.gif"){
+        //nickname变量是昵称 gender变量是性别
+        var nickname = document.getElementById('nickname').value;
+        var gender;
+        if(document.getElementById('boy').getAttribute("src") == "../images/super_failed.png"){
+            gender = 0;
+        }else{
+            gender = 1;
         }
+
+        var openid = getUrlParam("openid");
+
+        var data = {};
+        data.openid = openid;
+        data.nickname = encodeURI(nickname);
+        data.gender = gender;
+
+        $.ajax({
+            type: "POST",
+            url: "../server/login_server.php",
+            data:{trans_data:data},
+            dataType: "JSON",
+            success: function(){            
+                location.href="choose_galaxy.php?openid="+openid; 
+            },
+            error: function(){
+                alert('fail');
+            }
+        });
     }
+}
+
+
 </script>
 </body>
 </html>
