@@ -100,7 +100,6 @@ function func_lighten(){
     if(already_lighten){
         return ;
     }
-    document.getElementById('card').setAttribute("src","../images/puzzle_a.png");
     
     var wxSoundId = getUrlParam("wxSoundId");
 
