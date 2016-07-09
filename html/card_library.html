@@ -20,7 +20,6 @@
     </style>
 </head>
 <body>
-<!--head-->
 <div class="div_title">
     <div class="div_title_left">
         <img id = "user_sex" src="../images/blank_boy.png" width="190px">
@@ -29,15 +28,79 @@
         <p class="nickname"></p>
     </div>
 </div>
-<!--body-->
 <div class="div_card">
-    <img class="card">
+    <img class="card" onclick="func_select_planet()">
 </div>
-<!--foot-->
 <div class="div_back">
     <img id="bn_back" class="back" src="../images/back_idle.png" onclick="func_back()">
 </div>
-<script>
-</script>
 </body>
+
+
+<script src="../js/jquery-3.0.0.js"></script>
+<script src="../js/public_func.js"></script>
+
+<script type="text/javascript">
+    
+
+var openid = "";
+var level = -1;
+//初始化加载html后立刻执行这个函数
+window.onload = function(){
+    //通过这个函数可以从url中获取参数
+    openid = getUrlParam("openid");
+
+    //用jquery修改img所对应的文件
+    
+    $.ajax({
+        type: "GET",
+        url: "../server/GetUserData.php",
+        data:{trans_data:openid},
+        dataType: "JSON",
+        success: function(data){
+            $("p.nickname").text(decodeURI(data.name));   
+            if(data.sex == 0){
+                $("#user_sex").attr("src","../images/blank_girl.png");
+            } 
+            //level = data.level;   
+            
+            id = data.id;  
+        },
+        error: function(){
+            alert('fail');
+        }
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "../server/CountUserLevel.php",
+        data:{trans_data:openid},
+        dataType: "JSON",
+        success: function(data){
+            //alert(data);
+            level = data.level; 
+            var card_img_src = "../images/card_l_"+level+".png";
+            $("img.card").attr("src",card_img_src);
+        },
+        error: function(data){
+            alert('fail');
+            //alert(data);
+        }
+    });
+
+
+};    
+
+//选择星球按钮
+function func_select_planet(){
+    //document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
+    //alert("跳转至选择poem");
+    location.href="choose_poem.php?openid="+openid+"&userid="+id;
+}    
+
+
+
+    
+</script>
+
 </html>

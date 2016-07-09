@@ -1,5 +1,7 @@
-<!DOCTYPE html>
+<script src="../js/jquery-3.0.0.js"></script>
 <script src="../js/public_func.js"></script>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +9,7 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/bg.css">
     <link rel="stylesheet" href="../css/title.css">
+    
     <title>选择遨游的星系</title>
     <style>
         .div_galaxy_card{
@@ -15,27 +18,17 @@
         }
         .bn_galaxy_card{
             width: 75%;
-        }
-    </style>
+        }    </style>
 </head>
-<body>
-<!-- head -->
-<div class="div_title">
-    <div class="div_title_left">
-        <img id="user_sex" src="../images/blank_boy.png" width="190px">
-    </div>
-    <div class="div_nickname">
-        <p class="nickname"></p>
-    </div>
-    <div class="div_title_right">
-        <img id="bn_card_library" class="bn_card" onclick="func_card_library()">
-    </div>
-</div>
-<!--body-->
+<body style="align-content: center">
+<?php
+    include("header.php");
+?>
 <div class="div_galaxy_card">
     <img id="bn_galaxy_card" class="bn_galaxy_card" src="../gif/galaxy_card.gif" onclick="func_select_galaxy()">
 </div>
-<!--script-->
+
+
 <script>
 
 var name = "";
