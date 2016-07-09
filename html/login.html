@@ -77,10 +77,14 @@
 
     //选择男孩
     function func_choose_boy(){
+        document.getElementById('boy').setAttribute("src","../images/super_selected.png");
+        document.getElementById('girl').setAttribute("src","../images/princess_failed.png");
     }
 
     //选择女孩
     function func_choose_girl(){
+        document.getElementById('boy').setAttribute("src","../images/super_failed.png");
+        document.getElementById('girl').setAttribute("src","../images/princess_selected.png");
     }
 
     //提交
