@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa59e17-efee-4003-9cb8-eee90afd6a41" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/share.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/card_library.html" afterPath="$PROJECT_DIR$/html/card_library.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="smallstar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card_library.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="card_library.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/card_library.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16853933">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/share.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.056179777">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -104,6 +116,7 @@
         <option value="$PROJECT_DIR$/css/footer.css" />
         <option value="$PROJECT_DIR$/html/poem.html" />
         <option value="$PROJECT_DIR$/html/card_library.html" />
+        <option value="$PROJECT_DIR$/html/share.html" />
       </list>
     </option>
   </component>
@@ -116,8 +129,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="127" />
-    <option name="y" value="177" />
+    <option name="x" value="29" />
+    <option name="y" value="145" />
     <option name="width" value="1231" />
     <option name="height" value="655" />
   </component>
@@ -310,7 +323,7 @@
     <option name="totallyTimeSpent" value="35758000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="177" width="1231" height="655" extended-state="0" />
+    <frame x="29" y="145" width="1231" height="655" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -420,6 +433,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13440861">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -434,6 +448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05376344">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -486,8 +501,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/card_library.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16853933">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056179777">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
