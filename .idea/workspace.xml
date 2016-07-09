@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa59e17-efee-4003-9cb8-eee90afd6a41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/footer.css" afterPath="$PROJECT_DIR$/css/footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/choose_poem.php" afterPath="$PROJECT_DIR$/html/choose_poem.php" />
     </list>
     <ignored path="smallstar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="poem.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/poem.php">
+      <file leaf-file-name="choose_poem.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/choose_poem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2542373">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.7258065">
+              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -67,7 +67,6 @@
         <option value="$PROJECT_DIR$/html/login.php" />
         <option value="$PROJECT_DIR$/html/choose_galaxy.php" />
         <option value="$PROJECT_DIR$/html/choose_planet.php" />
-        <option value="$PROJECT_DIR$/html/choose_poem.php" />
         <option value="$PROJECT_DIR$/html/card_library.php" />
         <option value="$PROJECT_DIR$/html/share.php" />
         <option value="$PROJECT_DIR$/php/index.html" />
@@ -87,6 +86,7 @@
         <option value="$PROJECT_DIR$/html/share.html" />
         <option value="$PROJECT_DIR$/html/share_card.php" />
         <option value="$PROJECT_DIR$/css/footer.css" />
+        <option value="$PROJECT_DIR$/html/choose_poem.php" />
       </list>
     </option>
   </component>
@@ -99,8 +99,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="370" />
-    <option name="y" value="97" />
+    <option name="x" value="9" />
+    <option name="y" value="141" />
     <option name="width" value="1231" />
     <option name="height" value="655" />
   </component>
@@ -170,7 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="gif" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,7 +265,7 @@
     <option name="totallyTimeSpent" value="35758000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="370" y="97" width="1231" height="655" extended-state="0" />
+    <frame x="9" y="141" width="1231" height="655" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -350,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/title.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05376344">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/public_func.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24193548">
@@ -395,10 +388,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/title.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75268817">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/poem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2542373">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.53672314">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/choose_planet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/choose_poem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7258065">
+          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
           <folding />
         </state>
       </provider>
