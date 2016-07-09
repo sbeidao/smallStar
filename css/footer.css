@@ -1,0 +1,15 @@
+.div_back{
+    position: absolute;
+    height: 100px;
+    bottom: 10px;
+    width: 100%;
+}
+
+
+.back{
+    position: absolute;
+    width: 60px;
+    height:81px;
+    right: 50px;
+    z-index: 2;
+}
