@@ -18,11 +18,27 @@
             content: url("../images/user_head.png");
             background-size: 80px 108px;
         }
+        .div_nickname{
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .nickname{
+            text-align: center;
+            color:#382A5D;
+            width: 55%;
+            font-size: 25px;
+            background:url(../images/fill_in_blank.png) center left no-repeat;
+            border: none;
+        }
     </style>
 </head>
 <body>
 <div class="div_head_portrait">
     <img class="head_portrait">
+</div>
+<div class="div_nickname">
+    <input id="nickname" type="text" class="nickname" value="填写宝宝昵称" onclick="func_enable_submit()">
 </div>
 </body>
 </html>
