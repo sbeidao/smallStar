@@ -50,9 +50,48 @@
 </div>
 </body>
 
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../js/jquery-3.0.0.js"></script>
+
 <script type="text/javascript">
+var FirstAccess = 1 ;
+var openid = "";
+window.onload = function(){
+    var code = getUrlParam("code");
+
+    $.ajax({
+        type: "GET",
+        url: "../server/FirstAccess.php",
+        data:{trans_data:code},
+        dataType: "JSON",
+        success: function(data){
+           // data = $.parseJSON(data);
+            //alert(data);
+            openid = data.openid ;
+            if(data.first_access == 1) {
+                FirstAccess = 1;
+            } else {
+                FirstAccess = 0;
+            }
+        },
+        error: function(){
+            alert('fail');
+        }
+    });
 
 
+};    
+
+function func_login(){
+
+    document.getElementById('bn_login').setAttribute("src","../images/wechat_pressed.png");
+    if(FirstAccess){
+            window.location.href="login.php?openid="+openid;  
+    } else {
+            window.location.href="choose_galaxy.php?openid="+openid; 
+    }
+
+}
 </script>
 </html>
 

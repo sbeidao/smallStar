@@ -15,7 +15,7 @@
    $SAE_MYSQL_DB = "app_smallstar";
    //连接数据库
     $db = new mysqli($SAE_MYSQL_HOST_M, $SAE_MYSQL_USER, $SAE_MYSQL_PASS, $SAE_MYSQL_DB, $SAE_MYSQL_PORT);
-    print_r($db);
+    //print_r($db);
     if (!$db) {
    	 	printf("Connect failed: %s\n", mysqli_connect_error());
     	exit();
@@ -40,7 +40,7 @@
 
 	 while ($row = $result->fetch_row()) {
 	 	//echo json_encode($row);
-	 	print_r($row);
+	 	//print_r($row);
 	 	$name = $row[1];
 	 	$level = $row[2];
 	 	$sex = $row[3];
