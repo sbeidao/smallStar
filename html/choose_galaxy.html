@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/bg.css">
     <link rel="stylesheet" href="../css/title.css">
-    <title>选择星系</title>
+    <title>选择遨游的星系</title>
     <style>
         .div_galaxy_card{
             margin-top: 60px;
@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-<!-------head------->
+<!-- head -->
 <div class="div_title">
     <div class="div_title_left">
         <img id="user_sex" src="../images/blank_boy.png" width="190px">
@@ -31,16 +31,46 @@
         <img id="bn_card_library" class="bn_card" onclick="func_card_library()">
     </div>
 </div>
-<!-------body------->
+<!--body-->
 <div class="div_galaxy_card">
     <img id="bn_galaxy_card" class="bn_galaxy_card" src="../gif/galaxy_card.gif" onclick="func_select_galaxy()">
 </div>
-<!-------script------->
+<!--script-->
 <script>
-    //选择星系按钮
-    function func_select_galaxy(){
-        document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
-    }
+
+var name = "";
+var sex =-1;
+var openid = "";
+window.onload = function(){
+    openid = getUrlParam("openid");
+
+    $.ajax({
+        type: "GET",
+        url: "../server/GetUserData.php",
+        data:{trans_data:openid},
+        dataType: "JSON",
+        success: function(data){
+            $("p.nickname").text(decodeURI(data.name));   
+            if(data.sex == 0){
+                $("#user_sex").attr("src","../images/blank_girl.png");
+            } 
+            name = data.name;   
+            sex = data.sex;  
+        },
+        error: function(){
+            alert('fail');
+        }
+    });
+};    
+
+
+
+//选择星系按钮
+function func_select_galaxy(){
+    document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
+    //alert("跳转至选择星球");
+    location.href='choose_planet.php?name='+name+"&openid="+openid+"&sex="+sex;
+}
 </script>
 </body>
 </html>
