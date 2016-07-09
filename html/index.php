@@ -1,6 +1,22 @@
+<?php
+/*require_once "jssdk.php";
+
+
+
+$appid = "wx2f03a3ab9436c521";
+$security = "08a52123e6fe59b1789a923366d06607";
+
+$jssdk = new JSSDK($appid, $security);*/
+
+
+/*$connect_to_db = $database->connect_to_database();
+$signPackage = $jssdk->GetSignPackage();*/
+//echo "<script type=text/javascript>document.write(data)</script>";  
+?>
+
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="../js/jquery-3.0.0.js"></script>
-
+<script src="../js/public_func.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +33,7 @@
             background-size:cover;
             border: none;
             background-color:#382A5D;
+
         }
         .div_bn_login{
             margin-top: 160px;
@@ -50,10 +67,9 @@
 </div>
 </body>
 
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script src="../js/jquery-3.0.0.js"></script>
 
 <script type="text/javascript">
+    
 var FirstAccess = 1 ;
 var openid = "";
 window.onload = function(){
@@ -82,6 +98,8 @@ window.onload = function(){
 
 };    
 
+
+
 function func_login(){
 
     document.getElementById('bn_login').setAttribute("src","../images/wechat_pressed.png");
@@ -92,15 +110,6 @@ function func_login(){
     }
 
 }
+    
 </script>
 </html>
-
-
-
-
-
-
-
-
-
-

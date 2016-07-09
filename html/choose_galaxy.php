@@ -1,3 +1,9 @@
+<?php
+//require_once "jssdk.php";
+//$jssdk = new JSSDK("wx828431a5f84ec792", "f78f4c0a77d414180e4ff7895512f8fd");
+//$signPackage = $jssdk->GetSignPackage();
+?>
+
 <script src="../js/jquery-3.0.0.js"></script>
 <script src="../js/public_func.js"></script>
 
@@ -62,7 +68,7 @@ window.onload = function(){
 function func_select_galaxy(){
     document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
     //alert("跳转至选择星球");
-    location.href='choose_planet.php?name='+name+"&openid="+openid+"&sex="+sex;
+	location.href='choose_planet.php?name='+name+"&openid="+openid+"&sex="+sex;
 }
 </script>
 </body>

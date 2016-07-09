@@ -1,3 +1,8 @@
+<?php
+//require_once "jssdk.php";
+//$jssdk = new JSSDK("wx828431a5f84ec792", "f78f4c0a77d414180e4ff7895512f8fd");
+//$signPackage = $jssdk->GetSignPackage();
+?>
 <!DOCTYPE html>
 <script src="../js/jquery-3.0.0.js"></script>
 <script src="../js/public_func.js"></script>
