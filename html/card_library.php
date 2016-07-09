@@ -29,7 +29,7 @@
     </div>
 </div>
 <div class="div_card">
-    <img class="card" onclick="func_select_planet()">
+    <img class="card">
 </div>
 <div class="div_back">
     <img id="bn_back" class="back" src="../images/back_idle.png" onclick="func_back()">
@@ -89,15 +89,7 @@ window.onload = function(){
     });
 
 
-};    
-
-//选择星球按钮
-function func_select_planet(){
-    //document.getElementById('bn_galaxy_card').setAttribute("src","../images/galaxy_card_pressed.png");
-    //alert("跳转至选择poem");
-    location.href="choose_poem.php?openid="+openid+"&userid="+id;
-}    
-
+};
 
 
     
