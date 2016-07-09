@@ -74,3 +74,11 @@
     height: 81px;
     z-index: 2;
 }
+
+.div_poem{
+    text-align:center;
+}
+.poem{
+    margin-top:20px;
+    width:70%;
+}
