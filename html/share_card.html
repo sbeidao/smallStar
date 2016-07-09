@@ -38,7 +38,7 @@
 <body>
 <!-------body------->
 <div class="div_card">
-    <img class="card" src="../images/puzzle_a_black.png">
+    <img id="card" class="card" src="../images/puzzle_a_black.png">
     <p class="p1">已有<span id="lightCount">0</span>位好友为宝宝点亮！</p>
     <div id="QRcode" align="center"> </div>
     <!-- <img class="QRcode" id="QRcode" > -->
@@ -53,7 +53,7 @@
     //点亮
     function func_lighten(){
         document.getElementById('bn_lighten').setAttribute("src","../images/lighten_pressed.png");
-
+        document.getElementById('card').setAttribute("src","../images/puzzle_a.png");
     }
 </script>
 </body>
