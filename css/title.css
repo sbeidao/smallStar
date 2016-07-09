@@ -1,0 +1,46 @@
+.div_title{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+}
+
+.div_title_left{
+    height: 60px;
+    left:0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div_title_right{
+    height: 60px;
+    right: 10px;
+    position: absolute;
+}
+
+.div_nickname{
+    height: 15px;
+    width: 105px;
+    left: 82px;
+    top: 3px;
+    position: absolute;
+    z-index: 2;
+}
+
+.nickname{
+    color: #9DD0D9;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: -15px;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+}
+
+.bn_card{
+    content: url("../images/card_idle.png");
+}
