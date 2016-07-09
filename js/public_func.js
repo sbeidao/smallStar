@@ -1,7 +1,7 @@
 
 //返回按钮
 function func_back() {
-    document.getElementById('bn_back').setAttribute("src","../images/back_pressed.png");
+    //document.getElementById('bn_back').setAttribute("src","../images/back_pressed.png");
     history.back(-1);
 }
 
