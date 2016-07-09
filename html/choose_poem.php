@@ -26,6 +26,9 @@
 <?php
     include("header.php");
 ?>
+<div class="div_planet">
+    <img class="bn_planet" src="../gif/planet.gif">
+</div>
 <div class="div_poem">
     <img id="bn_choose_cgx" class="poem" src="../images/cgx_button.png" onclick="func_bn_choose_cgx()">
     <img id="bn_choose_qbs" class="poem" src="../images/qbs_button.png" onclick="func_bn_choose_qbs()">
