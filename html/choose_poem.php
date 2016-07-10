@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <script src="../js/jquery-3.0.0.js"></script>
 <script src="../js/public_func.js"></script>
 

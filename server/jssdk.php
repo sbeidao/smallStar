@@ -45,7 +45,7 @@ class JSSDK {
 
   private function getJsApiTicket() {
     // jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
-    $data = json_decode($this->get_php_file("jsapi_ticket.php"));
+    $data = json_decode($this->get_php_file("http://smallstar-wxfile.stor.sinaapp.com/jsapi_ticket.php"));
     if ($data->expire_time < time()) {
       $accessToken = $this->getAccessToken();
       // 如果是企业号用以下 URL 获取 ticket
@@ -56,7 +56,7 @@ class JSSDK {
       if ($ticket) {
         $data->expire_time = time() + 7000;
         $data->jsapi_ticket = $ticket;
-        $this->set_php_file("jsapi_ticket.php", json_encode($data));
+        $this->set_php_file("http://smallstar-wxfile.stor.sinaapp.com/jsapi_ticket.php", json_encode($data));
       }
     } else {
       $ticket = $data->jsapi_ticket;
@@ -67,7 +67,7 @@ class JSSDK {
 
   private function getAccessToken() {
     // access_token 应该全局存储与更新，以下代码以写入到文件中做示例
-    $data = json_decode($this->get_php_file("access_token.php"));
+    $data = json_decode($this->get_php_file("http://smallstar-wxfile.stor.sinaapp.com/access_token.php"));
     if ($data->expire_time < time()) {
       // 如果是企业号用以下URL获取access_token
       // $url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=$this->appId&corpsecret=$this->appSecret";
@@ -77,7 +77,7 @@ class JSSDK {
       if ($access_token) {
         $data->expire_time = time() + 7000;
         $data->access_token = $access_token;
-        $this->set_php_file("access_token.php", json_encode($data));
+        $this->set_php_file("http://smallstar-wxfile.stor.sinaapp.com/access_token.php", json_encode($data));
       }
     } else {
       $access_token = $data->access_token;
@@ -93,6 +93,7 @@ class JSSDK {
     // 如果在部署过程中代码在此处验证失败，请到 http://curl.haxx.se/ca/cacert.pem 下载新的证书判别文件。
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, true);
+    /*curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);*/
     curl_setopt($curl, CURLOPT_URL, $url);
 
     $res = curl_exec($curl);
