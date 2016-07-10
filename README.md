@@ -12,7 +12,7 @@
 2. 然后扫描下面的二维码，就可以进入网页应用
 ![](https://github.com/sbeidao/smallStar/raw/master/images/QRcode.png)
 
-3. 
+
 
 
 
