@@ -7,6 +7,7 @@
 -- 服务器版本: 5.6.23
 -- PHP 版本: 5.3.3
 
+
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
